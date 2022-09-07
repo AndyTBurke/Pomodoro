@@ -165,16 +165,6 @@ function App() {
   
   return (
   <div className="container">
-      <Break 
-        breakTime={state.break} 
-        handleInc={breakIncrement}
-        handleDec={breakDecrement}
-        />
-      <Session 
-        sessionTime={state.session} 
-        handleInc={sessIncrement}
-        handleDec={sessDecrement}
-        />
       <Timer 
         sessionTime={state.session} 
         breakTime={state.break}
@@ -185,6 +175,18 @@ function App() {
         handleClock={runClock}
         sessionBool={state.sessionBool}
        />
+       <div className="sb-div">
+        <Break 
+        breakTime={state.break} 
+        handleInc={breakIncrement}
+        handleDec={breakDecrement}
+        />
+        <Session 
+        sessionTime={state.session} 
+        handleInc={sessIncrement}
+        handleDec={sessDecrement}
+        />
+      </div>
       <audio src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav" id="beep" />
   </div>
   )
