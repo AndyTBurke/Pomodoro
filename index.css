@@ -26,6 +26,7 @@ body, html {
   border: 1px solid black;
   justify-content: space-around;
   padding: 1vw;
+  background-color: rgb(75, 75, 75);
 }
 
 #time-left {
@@ -43,4 +44,11 @@ button:hover {
   cursor: pointer;
   background-color: rgb(97, 93, 93);
   color: white
+}
+
+@media only screen and (max-width: 1130px) {
+  .sb-div {
+    flex-direction: column;
+    gap: 3vh;
+  }
 }
